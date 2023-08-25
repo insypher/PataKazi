@@ -11,6 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: white;
+  background-color: var(--body-color);
 }
 
 a {
@@ -68,7 +69,7 @@ div.pataKazi {
   gap: 7px;
 }
 
-div h1 {
+nav div h1 {
   margin-right: 40px;
 }
 
@@ -101,14 +102,39 @@ div.right div.location i {
   padding: 6.5px 8px;
 }
 
+div.right-main div.mainTitleFilter {
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  color: #141413;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.right-main div.mainTitleFilter div.leftMainTitle {
+  display: flex;
+  align-items: center;
+}
+
+div.right-main div.mainTitleFilter div.rightMainTitle {
+}
+
+div.right-main div.mainTitleFilter #jobNo {
+  border: 1px solid grey;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
 div.nav-2 {
   height: 100px;
   background-color: var(--background-color);
 }
 
 div.mainContent {
-  height: 86vh;
+  /* height: 86vh; */
   background-color: var(--body-color);
+  display: flex;
 }
 div.left-main {
   width: 220px;
@@ -159,6 +185,7 @@ div.left-main div.learn-box button.learn-button:hover {
 
 div.left-main div.full-filter {
   border-right: 1px solid #24262b;
+  height: 440px;
 }
 
 div.left-main div.full-filter div.filter-title {
@@ -168,10 +195,11 @@ div.left-main div.full-filter div.filter-title {
   gap: 140px;
   align-items: center;
 }
+
 .working-box h4 {
   color: gray;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .working-row {
   line-height: 30px;
@@ -180,6 +208,70 @@ div.left-main div.full-filter div.filter-title {
 .working-row label {
   color: black;
   margin-left: 10px;
+}
+
+.working-row input[type="checkbox"] {
+  accent-color: var(--background-color);
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.working-row input[type="checkbox"]:checked {
+  appearance: auto;
+  clip-path: circle(50% at 50% 50%);
+  background-color: #141413;
+}
+
+div.mainTitleFilter {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+}
+
+div.rightMainTitle {
+  display: flex;
+  /* justify-content: space-between;
+  width: 900px;
+  margin: 0px 20px; */
+}
+
+div.rightMainTitle #sortSpan {
+  margin-right: 10px;
+}
+
+div.rightMainTitle div.SortFilter {
+  display: flex;
+}
+
+div.cardGroups {
+  border: 1px solid black;
+  height: 100vh;
+  width: 85vw;
+  margin-left: 30px;
+  display: flex;
+}
+
+div.cardOne {
+  margin: 20px;
+  border: 1px solid grey;
+  height: 400px;
+  width: 360px;
+  border-radius: 25px;
+}
+
+div.cardColor {
+  height: 300px;
+  border-radius: 22px;
+  /* width: 340px; */
+  background-color: #ffe1cc;
+  margin: 10px;
+  margin-bottom: 90px;
 }
 
 .footer {
@@ -279,7 +371,7 @@ div.left-main div.full-filter div.filter-title {
     /* border: 1px solid red; */
     margin-left: 10px;
   }
-  div h1 {
+  nav div h1 {
     margin-right: 10px;
   }
   div.right {
