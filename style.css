@@ -250,28 +250,129 @@ div.rightMainTitle div.SortFilter {
 }
 
 div.cardGroups {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100vh;
   width: 85vw;
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 
 div.cardOne {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
   border: 1px solid grey;
-  height: 400px;
+  background-color: #ffffff;
+  height: 410px;
   width: 360px;
   border-radius: 25px;
 }
 
 div.cardColor {
+  display: flex;
+  flex-direction: column;
   height: 300px;
   border-radius: 22px;
   /* width: 340px; */
   background-color: #ffe1cc;
   margin: 10px;
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
+  color: var(--background-color);
+  display: flex;
+}
+
+div.cardDateBookmark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 40px;
+  width: 300px;
+}
+
+div.date {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 22px;
+  /* padding: 7px; */
+  height: 40px;
+  font-size: 14px;
+  width: 120px;
+}
+
+div.bookmarkLogo {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+div.companyName {
+  margin-left: 22px;
+  margin-top: 22px;
+}
+
+div.companyPositionLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  /* border: 1px solid red; */
+  margin-left: 22px;
+  margin-top: 5px;
+  height: 60px;
+}
+
+div.companyLogo img {
+  height: 47px;
+  width: 47px;
+  object-fit: cover;
+}
+
+div.companyPosition {
+  /* border: 1px solid red; */
+  width: 155px;
+  font-size: 20px;
+}
+
+div.roleCardGroup {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 5px;
+  line-height: 10px;
+}
+
+div.eachRoleCard {
+  font-size: 14px;
+  border: 1.5px solid #4d4742;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+div.cardBottom {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 300px;
+  /* margin-bottom: 10px; */
+}
+
+div.detailsBtn {
+  color: #ffffff;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 35px;
 }
 
 .footer {
